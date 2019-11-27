@@ -34,6 +34,16 @@ class pupper:
       self.color = color
       self.birthdate = birthdate
       self.breed = breed
+
+   def __init__(self, name, sex, weight, height, color, birthdate, breed):
+      self.id = id
+      self.name = name
+      self.sex = sex
+      self.weight = weight
+      self.height = height
+      self.color = color
+      self.birthdate = birthdate
+      self.breed = breed
 	  
    def readpupper(self, id, name, sex, weight, height, color, birthdate, breed):
       print("")
