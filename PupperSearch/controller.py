@@ -26,12 +26,13 @@ def doAction():
     if (userInput == "4"):
         pupperName = input("Enter Pupper Name:")
         sex = input("Enter Sex:")
-        height = input("Enter height:")
-        Weight = input("Enter Weight:")
-        Weight = input("Enter Weight:")
-        Weight = input("Enter Weight:")
-        breedObj = model.breed(breedName,temperament,coat)
-        dao.insertBreed(breedObj)
+        weight = input("Enter Weight:")
+        height = input("Enter Height:")
+        color = input("Enter Color:")
+        date_of_birth = input("Enter DOB:")
+        breed_id = input("Enter Breed ID:")
+        pupperObj = model.pupper(pupperName, sex, weight, height, color, date_of_birth, breed_id)
+        dao.insertPupper(pupperObj)
 
 
 
