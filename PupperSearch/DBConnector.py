@@ -15,6 +15,7 @@ def readBreed(read_sql,idList):
 	cursor.execute(read_sql,idList)
 	for x in cursor:
 	  print(x)
+	  
 	# disconnect from server
 	db.close()
 
@@ -40,11 +41,11 @@ def readPupper(read_sql,idList):
 	db.close()
 
 	
-def writepupper(write_sql):
+def writepupper(write_sql, data):
 	print("Inside writepupper method")
 	db = connect()
 	cursor = db.cursor()
-	cursor.execute(write_sql)
+	cursor.execute(write_sql, data)
 	db.commit()
 	
 	# disconnect from server
