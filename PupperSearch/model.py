@@ -10,10 +10,15 @@ class breed:
       self.name = name
       self.temperament = temperament
       self.coat = coat
+
+   def __init__(self, name, temperament, coat):
+         self.name = name
+         self.temperament = temperament
+         self.coat = coat
 	  
-   def readbreed(self, id, name, temperament, coat):
-      print("")
-	  
+
+
+
    def writebreed(self, id, name, temperament, coat):
       print("")
 
